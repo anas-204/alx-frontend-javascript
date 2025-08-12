@@ -15,6 +15,6 @@ interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
 
-function printTeacher(firstName: string, lastName: string): ({firstName: string, lastName: string}){
+function printTeacher({ firstName , lastName }): ({firstName: string, lastName: string}){
   return `${firstName[0]}. ${lastName}`;
 };
